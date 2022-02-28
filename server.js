@@ -1,17 +1,19 @@
 const cTable = require('console.table');
 const db = require('./db/connection');
+const questions = require('./Query/question')
 
 
-// start server after DB connection
-db.connect(err => {
-    if (err) throw err;
-    console.log('Database connected.');
-});
+// // start server after DB connection
+// db.connect(err => {
+//     if (err) throw err;
+//     console.log('Database connected.');
+// });
 
-db.promise()
-    .query(`SELECT * FROM role;`)
-    .then(([rows, fields]) => {
-        const table = cTable.getTable(rows);
-        console.log(table);
-    })
-    .then(() => db.end());
+// db.promise()
+//     .query(`SELECT * FROM role;`)
+//     .then(([rows, fields]) => {
+//         const table = cTable.getTable(rows);
+//         console.log(table);
+//     })
+//     .then(() => db.end());
+questions();
