@@ -16,7 +16,7 @@ To use this project you would have to use npm i and then npm start
 ## Usage
 There is a menu with options to add or view department, role, or employee. Selecting an option will perform that action on the database.
 
-[Video link of how to use employee Tracker]("add Link")
+[Video link of how to use employee Tracker](https://drive.google.com/file/d/1OvWDNgdtv3_0bIvouKCJK_nYy9TeVcVD/view)
 
 
 ## Credits
