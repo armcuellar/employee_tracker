@@ -2,12 +2,6 @@ var inquirer = require('inquirer');
 const db = require('../db/connection');
 const { showDepartment, showRole, showEmployee, addDepartment, addRole, addEmployee } = require('./role')
 
-// start server after DB connection
-// db.connect(err => {
-//     if (err) throw err;
-//     console.log('Database connected.');
-// });
-
 const questions = async () => {
     const answers = await inquirer
         .prompt([
